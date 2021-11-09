@@ -1,3 +1,36 @@
+# Create the React app
+
+npx create-react-app --template typescript
+
+## Add the Amplify libs
+npm install aws-amplify @aws-amplify/ui-react
+
+## Add amplify config to src/index.tsx
+```
+import Amplify from "aws-amplify";
+import awsExports from "./aws-exports";
+Amplify.configure(awsExports);
+```
+
+# Configure and prepare Amplify
+amplify init
+    Use main AWS Profile
+
+## Add the hosting
+amplify add hosting
+    Hosting with Ampliyf COnsole (Managed ....)
+    Continuous deployment
+
+## Add the secondary env
+amplify env add
+    Use secondary region profile
+
+## Configure front hosting manually from Amplify console in the secondary region
+
+Attach the repo and branch from the frontend section of amplify console
+
+---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
