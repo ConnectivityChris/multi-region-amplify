@@ -1,44 +1,50 @@
 {
-    "sydney": {
-        "awscloudformation": {
-            "AuthRoleName": "amplify-multiregionamplify-sydney-133955-authRole",
-            "UnauthRoleArn": "arn:aws:iam::963314337552:role/amplify-multiregionamplify-sydney-133955-unauthRole",
-            "AuthRoleArn": "arn:aws:iam::963314337552:role/amplify-multiregionamplify-sydney-133955-authRole",
-            "Region": "ap-southeast-2",
-            "DeploymentBucketName": "amplify-multiregionamplify-sydney-133955-deployment",
-            "UnauthRoleName": "amplify-multiregionamplify-sydney-133955-unauthRole",
-            "StackName": "amplify-multiregionamplify-sydney-133955",
-            "StackId": "arn:aws:cloudformation:ap-southeast-2:963314337552:stack/amplify-multiregionamplify-sydney-133955/7a05b9f0-411f-11ec-b85b-0a2fe791cc2c",
-            "AmplifyAppId": "d24iuyuexatsr3"
-        },
-        "categories": {
-            "hosting": {
-                "amplifyhosting": {
-                    "appId": "d24iuyuexatsr3",
-                    "type": "cicd"
-                }
-            }
-        }
+  "sydney": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-multiregionamplify-sydney-133955-authRole",
+      "UnauthRoleArn": "arn:aws:iam::963314337552:role/amplify-multiregionamplify-sydney-133955-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::963314337552:role/amplify-multiregionamplify-sydney-133955-authRole",
+      "Region": "ap-southeast-2",
+      "DeploymentBucketName": "amplify-multiregionamplify-sydney-133955-deployment",
+      "UnauthRoleName": "amplify-multiregionamplify-sydney-133955-unauthRole",
+      "StackName": "amplify-multiregionamplify-sydney-133955",
+      "StackId": "arn:aws:cloudformation:ap-southeast-2:963314337552:stack/amplify-multiregionamplify-sydney-133955/7a05b9f0-411f-11ec-b85b-0a2fe791cc2c",
+      "AmplifyAppId": "d24iuyuexatsr3"
     },
-    "singapore": {
-        "awscloudformation": {
-            "AuthRoleName": "amplify-multiregionamplify-singapore-134524-authRole",
-            "UnauthRoleArn": "arn:aws:iam::963314337552:role/amplify-multiregionamplify-singapore-134524-unauthRole",
-            "AuthRoleArn": "arn:aws:iam::963314337552:role/amplify-multiregionamplify-singapore-134524-authRole",
-            "Region": "ap-southeast-1",
-            "DeploymentBucketName": "amplify-multiregionamplify-singapore-134524-deployment",
-            "UnauthRoleName": "amplify-multiregionamplify-singapore-134524-unauthRole",
-            "StackName": "amplify-multiregionamplify-singapore-134524",
-            "StackId": "arn:aws:cloudformation:ap-southeast-1:963314337552:stack/amplify-multiregionamplify-singapore-134524/3e792b50-4120-11ec-ab2c-0656c9226456",
-            "AmplifyAppId": "dj8ckcvbara9k"
-        },
-        "categories": {
-            "hosting": {
-                "amplifyhosting": {
-                    "appId": "dj8ckcvbara9k",
-                    "type": "cicd"
-                }
-            }
+    "categories": {
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d24iuyuexatsr3",
+          "type": "cicd"
         }
+      },
+      "auth": {
+        "multiregionamplifyd8cfc190": {}
+      }
     }
+  },
+  "singapore": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-multiregionamplify-singapore-134524-authRole",
+      "UnauthRoleArn": "arn:aws:iam::963314337552:role/amplify-multiregionamplify-singapore-134524-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::963314337552:role/amplify-multiregionamplify-singapore-134524-authRole",
+      "Region": "ap-southeast-1",
+      "DeploymentBucketName": "amplify-multiregionamplify-singapore-134524-deployment",
+      "UnauthRoleName": "amplify-multiregionamplify-singapore-134524-unauthRole",
+      "StackName": "amplify-multiregionamplify-singapore-134524",
+      "StackId": "arn:aws:cloudformation:ap-southeast-1:963314337552:stack/amplify-multiregionamplify-singapore-134524/3e792b50-4120-11ec-ab2c-0656c9226456",
+      "AmplifyAppId": "dj8ckcvbara9k"
+    },
+    "categories": {
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "dj8ckcvbara9k",
+          "type": "cicd"
+        }
+      },
+      "auth": {
+        "multiregionamplifyd8cfc190": {}
+      }
+    }
+  }
 }
