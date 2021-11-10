@@ -44,6 +44,10 @@
       },
       "auth": {
         "multiregionamplifyd8cfc190": {}
+      },
+      "function": {
+        "TestFunc": {},
+        "testFunction": {}
       }
     }
   }
