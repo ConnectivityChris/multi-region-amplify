@@ -1,0 +1,5 @@
+{
+    "tableName": "restTestTable",
+    "partitionKeyName": "id",
+    "partitionKeyType": "S"
+}

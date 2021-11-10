@@ -1,0 +1,42 @@
+{
+  "paths": [
+    {
+      "name": "/blogs",
+      "lambdaFunction": "testFunc",
+      "privacy": {
+        "private": true,
+        "auth": [
+          "/POST",
+          "/GET",
+          "/PUT",
+          "/PATCH",
+          "/DELETE"
+        ]
+      },
+      "policyResourceName": "/blogs"
+    }
+  ],
+  "resourceName": "testapi",
+  "apiName": "testapi",
+  "functionArns": [
+    {
+      "lambdaFunction": "testFunc"
+    }
+  ],
+  "privacy": {
+    "auth": 1,
+    "unauth": 0,
+    "authRoleName": "amplify-multiregionamplify-sydney-133955-authRole",
+    "unAuthRoleName": "amplify-multiregionamplify-sydney-133955-unauthRole"
+  },
+  "dependsOn": [
+    {
+      "category": "function",
+      "resourceName": "testFunc",
+      "attributes": [
+        "Name",
+        "Arn"
+      ]
+    }
+  ]
+}
