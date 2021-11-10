@@ -46,11 +46,49 @@
           "additionalAuthenticationProviders": []
         }
       }
+    },
+    "api4d2301ae": {
+      "service": "API Gateway",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [
+        {
+          "category": "function",
+          "resourceName": "multiregionamplifyadd49a65",
+          "attributes": [
+            "Name",
+            "Arn"
+          ]
+        }
+      ]
     }
   },
-  "function": {},
+  "function": {
+    "multiregionamplifyadd49a65": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "dependsOn": [
+        {
+          "category": "storage",
+          "resourceName": "restDatabase",
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "attributeEnvMap": {
+            "Name": "TABLE_NAME",
+            "Arn": "TABLE_ARN"
+          }
+        }
+      ]
+    }
+  },
   "storage": {
     "restTestTable": {
+      "service": "DynamoDB",
+      "providerPlugin": "awscloudformation"
+    },
+    "restDatabase": {
       "service": "DynamoDB",
       "providerPlugin": "awscloudformation"
     }
