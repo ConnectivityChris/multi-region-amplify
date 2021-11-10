@@ -66,6 +66,8 @@ const App = () => {
   return (
     <div className="App">
       <header className="App-header">
+        <b>This is a feature branch</b>
+        
         <b>The Region is: {exports.aws_project_region}</b>
 
         <input id="name" onChange={event => onInputChange('name', event.target.value)} />
