@@ -21,5 +21,6 @@ type Comment @model @key(name: "byPost", fields: ["postID", "content"]) {
 
 type Test @model {
   id: ID!
-  name: String!
+  name: String
+  test: Boolean
 }

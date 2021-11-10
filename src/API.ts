@@ -169,6 +169,35 @@ export type DeleteCommentInput = {
   id: string,
 };
 
+export type CreateTestInput = {
+  id?: string | null,
+  name: string,
+};
+
+export type ModelTestConditionInput = {
+  name?: ModelStringInput | null,
+  and?: Array< ModelTestConditionInput | null > | null,
+  or?: Array< ModelTestConditionInput | null > | null,
+  not?: ModelTestConditionInput | null,
+};
+
+export type Test = {
+  __typename: "Test",
+  id: string,
+  name: string,
+  createdAt: string,
+  updatedAt: string,
+};
+
+export type UpdateTestInput = {
+  id: string,
+  name?: string | null,
+};
+
+export type DeleteTestInput = {
+  id: string,
+};
+
 export type ModelBlogFilterInput = {
   id?: ModelIDInput | null,
   name?: ModelStringInput | null,
@@ -199,6 +228,20 @@ export type ModelCommentFilterInput = {
   and?: Array< ModelCommentFilterInput | null > | null,
   or?: Array< ModelCommentFilterInput | null > | null,
   not?: ModelCommentFilterInput | null,
+};
+
+export type ModelTestFilterInput = {
+  id?: ModelIDInput | null,
+  name?: ModelStringInput | null,
+  and?: Array< ModelTestFilterInput | null > | null,
+  or?: Array< ModelTestFilterInput | null > | null,
+  not?: ModelTestFilterInput | null,
+};
+
+export type ModelTestConnection = {
+  __typename: "ModelTestConnection",
+  items?:  Array<Test | null > | null,
+  nextToken?: string | null,
 };
 
 export type CreateBlogMutationVariables = {
@@ -504,6 +547,51 @@ export type DeleteCommentMutation = {
   } | null,
 };
 
+export type CreateTestMutationVariables = {
+  input: CreateTestInput,
+  condition?: ModelTestConditionInput | null,
+};
+
+export type CreateTestMutation = {
+  createTest?:  {
+    __typename: "Test",
+    id: string,
+    name: string,
+    createdAt: string,
+    updatedAt: string,
+  } | null,
+};
+
+export type UpdateTestMutationVariables = {
+  input: UpdateTestInput,
+  condition?: ModelTestConditionInput | null,
+};
+
+export type UpdateTestMutation = {
+  updateTest?:  {
+    __typename: "Test",
+    id: string,
+    name: string,
+    createdAt: string,
+    updatedAt: string,
+  } | null,
+};
+
+export type DeleteTestMutationVariables = {
+  input: DeleteTestInput,
+  condition?: ModelTestConditionInput | null,
+};
+
+export type DeleteTestMutation = {
+  deleteTest?:  {
+    __typename: "Test",
+    id: string,
+    name: string,
+    createdAt: string,
+    updatedAt: string,
+  } | null,
+};
+
 export type GetBlogQueryVariables = {
   id: string,
 };
@@ -680,6 +768,40 @@ export type ListCommentsQuery = {
         updatedAt: string,
       } | null,
       content: string,
+      createdAt: string,
+      updatedAt: string,
+    } | null > | null,
+    nextToken?: string | null,
+  } | null,
+};
+
+export type GetTestQueryVariables = {
+  id: string,
+};
+
+export type GetTestQuery = {
+  getTest?:  {
+    __typename: "Test",
+    id: string,
+    name: string,
+    createdAt: string,
+    updatedAt: string,
+  } | null,
+};
+
+export type ListTestsQueryVariables = {
+  filter?: ModelTestFilterInput | null,
+  limit?: number | null,
+  nextToken?: string | null,
+};
+
+export type ListTestsQuery = {
+  listTests?:  {
+    __typename: "ModelTestConnection",
+    items?:  Array< {
+      __typename: "Test",
+      id: string,
+      name: string,
       createdAt: string,
       updatedAt: string,
     } | null > | null,
@@ -940,6 +1062,36 @@ export type OnDeleteCommentSubscription = {
       updatedAt: string,
     } | null,
     content: string,
+    createdAt: string,
+    updatedAt: string,
+  } | null,
+};
+
+export type OnCreateTestSubscription = {
+  onCreateTest?:  {
+    __typename: "Test",
+    id: string,
+    name: string,
+    createdAt: string,
+    updatedAt: string,
+  } | null,
+};
+
+export type OnUpdateTestSubscription = {
+  onUpdateTest?:  {
+    __typename: "Test",
+    id: string,
+    name: string,
+    createdAt: string,
+    updatedAt: string,
+  } | null,
+};
+
+export type OnDeleteTestSubscription = {
+  onDeleteTest?:  {
+    __typename: "Test",
+    id: string,
+    name: string,
     createdAt: string,
     updatedAt: string,
   } | null,

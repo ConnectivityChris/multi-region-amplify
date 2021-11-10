@@ -233,3 +233,33 @@ export const onDeleteComment = /* GraphQL */ `
     }
   }
 `;
+export const onCreateTest = /* GraphQL */ `
+  subscription OnCreateTest {
+    onCreateTest {
+      id
+      name
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const onUpdateTest = /* GraphQL */ `
+  subscription OnUpdateTest {
+    onUpdateTest {
+      id
+      name
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const onDeleteTest = /* GraphQL */ `
+  subscription OnDeleteTest {
+    onDeleteTest {
+      id
+      name
+      createdAt
+      updatedAt
+    }
+  }
+`;
