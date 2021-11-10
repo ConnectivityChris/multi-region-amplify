@@ -73,9 +73,6 @@
       "auth": {
         "multiregionamplifyd8cfc190": {}
       },
-      "function": {
-        "testFunc": {}
-      },
       "hosting": {
         "amplifyhosting": {
           "appId": "d24iuyuexatsr3",

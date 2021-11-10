@@ -48,27 +48,7 @@
       }
     }
   },
-  "function": {
-    "testFunc": {
-      "build": true,
-      "providerPlugin": "awscloudformation",
-      "service": "Lambda",
-      "dependsOn": [
-        {
-          "category": "storage",
-          "resourceName": "restTestTable",
-          "attributes": [
-            "Name",
-            "Arn"
-          ],
-          "attributeEnvMap": {
-            "Name": "TABLE_NAME",
-            "Arn": "TABLE_ARN"
-          }
-        }
-      ]
-    }
-  },
+  "function": {},
   "storage": {
     "restTestTable": {
       "service": "DynamoDB",
