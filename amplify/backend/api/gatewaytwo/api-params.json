@@ -1,0 +1,35 @@
+{
+  "paths": [
+    {
+      "name": "/blogs",
+      "lambdaFunction": "multiregionamplify7ff31f4f",
+      "privacy": {
+        "open": true
+      },
+      "policyResourceName": "/blogs"
+    }
+  ],
+  "resourceName": "gatewaytwo",
+  "apiName": "gatewaytwo",
+  "functionArns": [
+    {
+      "lambdaFunction": "multiregionamplify7ff31f4f"
+    }
+  ],
+  "privacy": {
+    "auth": 0,
+    "unauth": 0,
+    "authRoleName": "amplify-multiregionamplify-sydney-133955-authRole",
+    "unAuthRoleName": "amplify-multiregionamplify-sydney-133955-unauthRole"
+  },
+  "dependsOn": [
+    {
+      "category": "function",
+      "resourceName": "multiregionamplify7ff31f4f",
+      "attributes": [
+        "Name",
+        "Arn"
+      ]
+    }
+  ]
+}

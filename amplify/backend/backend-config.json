@@ -54,6 +54,20 @@
           ]
         }
       ]
+    },
+    "gatewaytwo": {
+      "service": "API Gateway",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [
+        {
+          "category": "function",
+          "resourceName": "multiregionamplify7ff31f4f",
+          "attributes": [
+            "Name",
+            "Arn"
+          ]
+        }
+      ]
     }
   },
   "function": {
@@ -77,6 +91,25 @@
       ]
     },
     "multiregionamplify22b9e4f4": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "dependsOn": [
+        {
+          "category": "storage",
+          "resourceName": "dynamodd14eca7",
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "attributeEnvMap": {
+            "Name": "TABLE_NAME",
+            "Arn": "TABLE_ARN"
+          }
+        }
+      ]
+    },
+    "multiregionamplify7ff31f4f": {
       "build": true,
       "providerPlugin": "awscloudformation",
       "service": "Lambda",

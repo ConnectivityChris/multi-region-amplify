@@ -16,6 +16,14 @@
         "testFunc": {
           "deploymentBucketName": "amplify-multiregionamplify-sydney-133955-deployment",
           "s3Key": "amplify-builds/testFunc-58317445756379427255-build.zip"
+        },
+        "multiregionamplify4388b592": {
+          "deploymentBucketName": "amplify-multiregionamplify-sydney-133955-deployment",
+          "s3Key": "amplify-builds/multiregionamplify4388b592-505378382b504435764b-build.zip"
+        },
+        "multiregionamplify22b9e4f4": {
+          "deploymentBucketName": "amplify-multiregionamplify-sydney-133955-deployment",
+          "s3Key": "amplify-builds/multiregionamplify22b9e4f4-45754e534a5170756a74-build.zip"
         }
       },
       "hosting": {
