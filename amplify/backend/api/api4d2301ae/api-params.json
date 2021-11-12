@@ -1,0 +1,49 @@
+{
+  "paths": [
+    {
+      "name": "/blogs",
+      "lambdaFunction": "multiregionamplifyadd49a65",
+      "privacy": {
+        "protected": true,
+        "auth": [
+          "/POST",
+          "/GET",
+          "/PUT",
+          "/PATCH",
+          "/DELETE"
+        ],
+        "unauth": [
+          "/POST",
+          "/GET",
+          "/PUT",
+          "/PATCH",
+          "/DELETE"
+        ]
+      },
+      "policyResourceName": "/blogs"
+    }
+  ],
+  "resourceName": "api4d2301ae",
+  "apiName": "api4d2301ae",
+  "functionArns": [
+    {
+      "lambdaFunction": "multiregionamplifyadd49a65"
+    }
+  ],
+  "privacy": {
+    "auth": 1,
+    "unauth": 1,
+    "authRoleName": "amplify-multiregionamplify-test-151645-authRole",
+    "unAuthRoleName": "amplify-multiregionamplify-test-151645-unauthRole"
+  },
+  "dependsOn": [
+    {
+      "category": "function",
+      "resourceName": "multiregionamplifyadd49a65",
+      "attributes": [
+        "Name",
+        "Arn"
+      ]
+    }
+  ]
+}

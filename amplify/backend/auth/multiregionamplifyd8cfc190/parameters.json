@@ -1,6 +1,6 @@
 {
     "identityPoolName": "multiregionamplifyd8cfc190_identitypool_d8cfc190",
-    "allowUnauthenticatedIdentities": false,
+    "allowUnauthenticatedIdentities": true,
     "resourceNameTruncated": "multird8cfc190",
     "userPoolName": "multiregionamplifyd8cfc190_userpool_d8cfc190",
     "autoVerifiedAttributes": [
