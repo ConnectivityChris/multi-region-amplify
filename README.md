@@ -1,3 +1,9 @@
+# Reference Links
+
+### Api Gateway Stages support
+https://github.com/aws-amplify/amplify-cli/issues/7404#issuecomment-852448652
+
+
 # Create the React app
 
 npx create-react-app --template typescript
