@@ -17,6 +17,15 @@
           "deploymentBucketName": "amplify-multiregionamplify-sydney-133955-deployment",
           "s3Key": "amplify-builds/testFunc-58317445756379427255-build.zip"
         }
+      },
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d24iuyuexatsr3",
+          "type": "cicd"
+        }
+      },
+      "auth": {
+        "multiregionamplifyabd58922": {}
       }
     }
   }
