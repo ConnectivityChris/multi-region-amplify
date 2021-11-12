@@ -24,6 +24,10 @@
         "multiregionamplify22b9e4f4": {
           "deploymentBucketName": "amplify-multiregionamplify-sydney-133955-deployment",
           "s3Key": "amplify-builds/multiregionamplify22b9e4f4-45754e534a5170756a74-build.zip"
+        },
+        "multiregionamplify7ff31f4f": {
+          "deploymentBucketName": "amplify-multiregionamplify-sydney-133955-deployment",
+          "s3Key": "amplify-builds/multiregionamplify7ff31f4f-57534e64745339687632-build.zip"
         }
       },
       "hosting": {
