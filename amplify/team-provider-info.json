@@ -18,9 +18,6 @@
           "type": "cicd"
         }
       },
-      "auth": {
-        "multiregionamplifyd8cfc190": {}
-      },
       "function": {
         "testFunc": {
           "deploymentBucketName": "amplify-multiregionamplify-sydney-133955-deployment",

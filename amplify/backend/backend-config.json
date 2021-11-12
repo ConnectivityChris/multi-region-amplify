@@ -2,95 +2,11 @@
   "hosting": {
     "amplifyhosting": {
       "service": "amplifyhosting",
-      "type": "cicd",
-      "lastPushTimeStamp": "2021-11-09T05:44:48.170Z"
+      "type": "cicd"
     }
   },
-  "auth": {
-    "multiregionamplifyd8cfc190": {
-      "service": "Cognito",
-      "providerPlugin": "awscloudformation",
-      "dependsOn": [],
-      "customAuth": false,
-      "frontendAuthConfig": {
-        "loginMechanisms": [
-          "PREFERRED_USERNAME"
-        ],
-        "signupAttributes": [],
-        "passwordProtectionSettings": {
-          "passwordPolicyMinLength": 8,
-          "passwordPolicyCharacters": []
-        },
-        "mfaConfiguration": "OFF",
-        "mfaTypes": [
-          "SMS"
-        ],
-        "verificationMechanisms": [
-          "EMAIL"
-        ]
-      }
-    }
-  },
-  "api": {
-    "multiregionamplify": {
-      "service": "AppSync",
-      "providerPlugin": "awscloudformation",
-      "output": {
-        "authConfig": {
-          "defaultAuthentication": {
-            "authenticationType": "AMAZON_COGNITO_USER_POOLS",
-            "userPoolConfig": {
-              "userPoolId": "authmultiregionamplifyd8cfc190"
-            }
-          },
-          "additionalAuthenticationProviders": []
-        }
-      }
-    },
-    "api4d2301ae": {
-      "service": "API Gateway",
-      "providerPlugin": "awscloudformation",
-      "dependsOn": [
-        {
-          "category": "function",
-          "resourceName": "multiregionamplifyadd49a65",
-          "attributes": [
-            "Name",
-            "Arn"
-          ]
-        }
-      ]
-    }
-  },
-  "function": {
-    "multiregionamplifyadd49a65": {
-      "build": true,
-      "providerPlugin": "awscloudformation",
-      "service": "Lambda",
-      "dependsOn": [
-        {
-          "category": "storage",
-          "resourceName": "restDatabase",
-          "attributes": [
-            "Name",
-            "Arn"
-          ],
-          "attributeEnvMap": {
-            "Name": "TABLE_NAME",
-            "Arn": "TABLE_ARN"
-          }
-        }
-      ]
-    }
-  },
-  "storage": {
-    "restTestTable": {
-      "service": "DynamoDB",
-      "providerPlugin": "awscloudformation"
-    },
-    "restDatabase": {
-      "service": "DynamoDB",
-      "providerPlugin": "awscloudformation"
-    }
-  }
+  "auth": {},
+  "api": {},
+  "function": {},
+  "storage": {}
 }
