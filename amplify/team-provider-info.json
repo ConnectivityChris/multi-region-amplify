@@ -16,6 +16,10 @@
         "multiregionamplify1bd3dbfa": {
           "deploymentBucketName": "amplify-multiregionamplify-main-72942-deployment",
           "s3Key": "amplify-builds/multiregionamplify1bd3dbfa-7954496d537573782b44-build.zip"
+        },
+        "amplifyrepochangetes1a2c65bf": {
+          "deploymentBucketName": "amplify-multiregionamplify-main-72942-deployment",
+          "s3Key": "amplify-builds/amplifyrepochangetes1a2c65bf-41672b414d4f356f532b-build.zip"
         }
       },
       "auth": {
