@@ -14,6 +14,12 @@
     "categories": {
       "auth": {
         "multiregionamplifyb1c07098": {}
+      },
+      "function": {
+        "multiregionamplify1bd3dbfa": {
+          "deploymentBucketName": "amplify-multiregionamplify-dev-124452-deployment",
+          "s3Key": "amplify-builds/multiregionamplify1bd3dbfa-7954496d537573782b44-build.zip"
+        }
       }
     }
   }
