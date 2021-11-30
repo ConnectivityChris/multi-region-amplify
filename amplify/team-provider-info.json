@@ -1,25 +1,25 @@
 {
-  "dev": {
+  "main": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-multiregionamplify-dev-124452-authRole",
-      "UnauthRoleArn": "arn:aws:iam::963314337552:role/amplify-multiregionamplify-dev-124452-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::963314337552:role/amplify-multiregionamplify-dev-124452-authRole",
+      "AuthRoleName": "amplify-multiregionamplify-main-72942-authRole",
+      "UnauthRoleArn": "arn:aws:iam::963314337552:role/amplify-multiregionamplify-main-72942-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::963314337552:role/amplify-multiregionamplify-main-72942-authRole",
       "Region": "ap-southeast-2",
-      "DeploymentBucketName": "amplify-multiregionamplify-dev-124452-deployment",
-      "UnauthRoleName": "amplify-multiregionamplify-dev-124452-unauthRole",
-      "StackName": "amplify-multiregionamplify-dev-124452",
-      "StackId": "arn:aws:cloudformation:ap-southeast-2:963314337552:stack/amplify-multiregionamplify-dev-124452/445a9a30-5198-11ec-bf6d-0afab0aea520",
-      "AmplifyAppId": "d2vf94pz527al5"
+      "DeploymentBucketName": "amplify-multiregionamplify-main-72942-deployment",
+      "UnauthRoleName": "amplify-multiregionamplify-main-72942-unauthRole",
+      "StackName": "amplify-multiregionamplify-main-72942",
+      "StackId": "arn:aws:cloudformation:ap-southeast-2:963314337552:stack/amplify-multiregionamplify-main-72942/4911c230-51af-11ec-897a-0ab603ad270e",
+      "AmplifyAppId": "densneoq70hfy"
     },
     "categories": {
-      "auth": {
-        "multiregionamplifyb1c07098": {}
-      },
       "function": {
         "multiregionamplify1bd3dbfa": {
-          "deploymentBucketName": "amplify-multiregionamplify-dev-124452-deployment",
+          "deploymentBucketName": "amplify-multiregionamplify-main-72942-deployment",
           "s3Key": "amplify-builds/multiregionamplify1bd3dbfa-7954496d537573782b44-build.zip"
         }
+      },
+      "auth": {
+        "multiregionamplifyb1c07098": {}
       }
     }
   }
