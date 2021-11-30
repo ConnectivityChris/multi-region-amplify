@@ -67,7 +67,7 @@ const App = () => {
     <div className="App">
       <header className="App-header">
         <b>The Region is: {exports.aws_project_region}</b>
-        <b>The Repository is CodeCommit.</b>
+        <b>The Repository is GitHub.</b>
 
         <input id="name" onChange={event => onInputChange('name', event.target.value)} />
 
