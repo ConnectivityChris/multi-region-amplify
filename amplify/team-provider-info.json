@@ -1,43 +1,19 @@
 {
-  "sydney": {
+  "dev": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-multiregionamplify-sydney-133955-authRole",
-      "UnauthRoleArn": "arn:aws:iam::963314337552:role/amplify-multiregionamplify-sydney-133955-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::963314337552:role/amplify-multiregionamplify-sydney-133955-authRole",
+      "AuthRoleName": "amplify-multiregionamplify-dev-124452-authRole",
+      "UnauthRoleArn": "arn:aws:iam::963314337552:role/amplify-multiregionamplify-dev-124452-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::963314337552:role/amplify-multiregionamplify-dev-124452-authRole",
       "Region": "ap-southeast-2",
-      "DeploymentBucketName": "amplify-multiregionamplify-sydney-133955-deployment",
-      "UnauthRoleName": "amplify-multiregionamplify-sydney-133955-unauthRole",
-      "StackName": "amplify-multiregionamplify-sydney-133955",
-      "StackId": "arn:aws:cloudformation:ap-southeast-2:963314337552:stack/amplify-multiregionamplify-sydney-133955/7a05b9f0-411f-11ec-b85b-0a2fe791cc2c",
-      "AmplifyAppId": "d24iuyuexatsr3"
+      "DeploymentBucketName": "amplify-multiregionamplify-dev-124452-deployment",
+      "UnauthRoleName": "amplify-multiregionamplify-dev-124452-unauthRole",
+      "StackName": "amplify-multiregionamplify-dev-124452",
+      "StackId": "arn:aws:cloudformation:ap-southeast-2:963314337552:stack/amplify-multiregionamplify-dev-124452/445a9a30-5198-11ec-bf6d-0afab0aea520",
+      "AmplifyAppId": "d2vf94pz527al5"
     },
     "categories": {
-      "function": {
-        "testFunc": {
-          "deploymentBucketName": "amplify-multiregionamplify-sydney-133955-deployment",
-          "s3Key": "amplify-builds/testFunc-58317445756379427255-build.zip"
-        },
-        "multiregionamplify4388b592": {
-          "deploymentBucketName": "amplify-multiregionamplify-sydney-133955-deployment",
-          "s3Key": "amplify-builds/multiregionamplify4388b592-505378382b504435764b-build.zip"
-        },
-        "multiregionamplify22b9e4f4": {
-          "deploymentBucketName": "amplify-multiregionamplify-sydney-133955-deployment",
-          "s3Key": "amplify-builds/multiregionamplify22b9e4f4-45754e534a5170756a74-build.zip"
-        },
-        "multiregionamplify7ff31f4f": {
-          "deploymentBucketName": "amplify-multiregionamplify-sydney-133955-deployment",
-          "s3Key": "amplify-builds/multiregionamplify7ff31f4f-57534e64745339687632-build.zip"
-        }
-      },
-      "hosting": {
-        "amplifyhosting": {
-          "appId": "d24iuyuexatsr3",
-          "type": "cicd"
-        }
-      },
       "auth": {
-        "multiregionamplifyabd58922": {}
+        "multiregionamplifyb1c07098": {}
       }
     }
   }
