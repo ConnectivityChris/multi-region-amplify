@@ -65,7 +65,7 @@ export type Blog = {
 
 export type ModelPostConnection = {
   __typename: "ModelPostConnection",
-  items?:  Array<Post | null > | null,
+  items:  Array<Post >,
   nextToken?: string | null,
 };
 
@@ -82,7 +82,7 @@ export type Post = {
 
 export type ModelCommentConnection = {
   __typename: "ModelCommentConnection",
-  items?:  Array<Comment | null > | null,
+  items:  Array<Comment >,
   nextToken?: string | null,
 };
 
@@ -179,7 +179,7 @@ export type ModelBlogFilterInput = {
 
 export type ModelBlogConnection = {
   __typename: "ModelBlogConnection",
-  items?:  Array<Blog | null > | null,
+  items:  Array<Blog >,
   nextToken?: string | null,
 };
 
@@ -213,14 +213,14 @@ export type CreateBlogMutation = {
     name: string,
     posts?:  {
       __typename: "ModelPostConnection",
-      items?:  Array< {
+      items:  Array< {
         __typename: "Post",
         id: string,
         title: string,
         blogID: string,
         createdAt: string,
         updatedAt: string,
-      } | null > | null,
+      } >,
       nextToken?: string | null,
     } | null,
     createdAt: string,
@@ -240,14 +240,14 @@ export type UpdateBlogMutation = {
     name: string,
     posts?:  {
       __typename: "ModelPostConnection",
-      items?:  Array< {
+      items:  Array< {
         __typename: "Post",
         id: string,
         title: string,
         blogID: string,
         createdAt: string,
         updatedAt: string,
-      } | null > | null,
+      } >,
       nextToken?: string | null,
     } | null,
     createdAt: string,
@@ -267,14 +267,14 @@ export type DeleteBlogMutation = {
     name: string,
     posts?:  {
       __typename: "ModelPostConnection",
-      items?:  Array< {
+      items:  Array< {
         __typename: "Post",
         id: string,
         title: string,
         blogID: string,
         createdAt: string,
         updatedAt: string,
-      } | null > | null,
+      } >,
       nextToken?: string | null,
     } | null,
     createdAt: string,
@@ -306,14 +306,14 @@ export type CreatePostMutation = {
     } | null,
     comments?:  {
       __typename: "ModelCommentConnection",
-      items?:  Array< {
+      items:  Array< {
         __typename: "Comment",
         id: string,
         postID: string,
         content: string,
         createdAt: string,
         updatedAt: string,
-      } | null > | null,
+      } >,
       nextToken?: string | null,
     } | null,
     createdAt: string,
@@ -345,14 +345,14 @@ export type UpdatePostMutation = {
     } | null,
     comments?:  {
       __typename: "ModelCommentConnection",
-      items?:  Array< {
+      items:  Array< {
         __typename: "Comment",
         id: string,
         postID: string,
         content: string,
         createdAt: string,
         updatedAt: string,
-      } | null > | null,
+      } >,
       nextToken?: string | null,
     } | null,
     createdAt: string,
@@ -384,14 +384,14 @@ export type DeletePostMutation = {
     } | null,
     comments?:  {
       __typename: "ModelCommentConnection",
-      items?:  Array< {
+      items:  Array< {
         __typename: "Comment",
         id: string,
         postID: string,
         content: string,
         createdAt: string,
         updatedAt: string,
-      } | null > | null,
+      } >,
       nextToken?: string | null,
     } | null,
     createdAt: string,
@@ -515,14 +515,14 @@ export type GetBlogQuery = {
     name: string,
     posts?:  {
       __typename: "ModelPostConnection",
-      items?:  Array< {
+      items:  Array< {
         __typename: "Post",
         id: string,
         title: string,
         blogID: string,
         createdAt: string,
         updatedAt: string,
-      } | null > | null,
+      } >,
       nextToken?: string | null,
     } | null,
     createdAt: string,
@@ -539,7 +539,7 @@ export type ListBlogsQueryVariables = {
 export type ListBlogsQuery = {
   listBlogs?:  {
     __typename: "ModelBlogConnection",
-    items?:  Array< {
+    items:  Array< {
       __typename: "Blog",
       id: string,
       name: string,
@@ -549,7 +549,7 @@ export type ListBlogsQuery = {
       } | null,
       createdAt: string,
       updatedAt: string,
-    } | null > | null,
+    } >,
     nextToken?: string | null,
   } | null,
 };
@@ -577,14 +577,14 @@ export type GetPostQuery = {
     } | null,
     comments?:  {
       __typename: "ModelCommentConnection",
-      items?:  Array< {
+      items:  Array< {
         __typename: "Comment",
         id: string,
         postID: string,
         content: string,
         createdAt: string,
         updatedAt: string,
-      } | null > | null,
+      } >,
       nextToken?: string | null,
     } | null,
     createdAt: string,
@@ -601,7 +601,7 @@ export type ListPostsQueryVariables = {
 export type ListPostsQuery = {
   listPosts?:  {
     __typename: "ModelPostConnection",
-    items?:  Array< {
+    items:  Array< {
       __typename: "Post",
       id: string,
       title: string,
@@ -619,7 +619,7 @@ export type ListPostsQuery = {
       } | null,
       createdAt: string,
       updatedAt: string,
-    } | null > | null,
+    } >,
     nextToken?: string | null,
   } | null,
 };
@@ -667,7 +667,7 @@ export type ListCommentsQueryVariables = {
 export type ListCommentsQuery = {
   listComments?:  {
     __typename: "ModelCommentConnection",
-    items?:  Array< {
+    items:  Array< {
       __typename: "Comment",
       id: string,
       postID: string,
@@ -682,7 +682,7 @@ export type ListCommentsQuery = {
       content: string,
       createdAt: string,
       updatedAt: string,
-    } | null > | null,
+    } >,
     nextToken?: string | null,
   } | null,
 };
@@ -694,14 +694,14 @@ export type OnCreateBlogSubscription = {
     name: string,
     posts?:  {
       __typename: "ModelPostConnection",
-      items?:  Array< {
+      items:  Array< {
         __typename: "Post",
         id: string,
         title: string,
         blogID: string,
         createdAt: string,
         updatedAt: string,
-      } | null > | null,
+      } >,
       nextToken?: string | null,
     } | null,
     createdAt: string,
@@ -716,14 +716,14 @@ export type OnUpdateBlogSubscription = {
     name: string,
     posts?:  {
       __typename: "ModelPostConnection",
-      items?:  Array< {
+      items:  Array< {
         __typename: "Post",
         id: string,
         title: string,
         blogID: string,
         createdAt: string,
         updatedAt: string,
-      } | null > | null,
+      } >,
       nextToken?: string | null,
     } | null,
     createdAt: string,
@@ -738,14 +738,14 @@ export type OnDeleteBlogSubscription = {
     name: string,
     posts?:  {
       __typename: "ModelPostConnection",
-      items?:  Array< {
+      items:  Array< {
         __typename: "Post",
         id: string,
         title: string,
         blogID: string,
         createdAt: string,
         updatedAt: string,
-      } | null > | null,
+      } >,
       nextToken?: string | null,
     } | null,
     createdAt: string,
@@ -772,14 +772,14 @@ export type OnCreatePostSubscription = {
     } | null,
     comments?:  {
       __typename: "ModelCommentConnection",
-      items?:  Array< {
+      items:  Array< {
         __typename: "Comment",
         id: string,
         postID: string,
         content: string,
         createdAt: string,
         updatedAt: string,
-      } | null > | null,
+      } >,
       nextToken?: string | null,
     } | null,
     createdAt: string,
@@ -806,14 +806,14 @@ export type OnUpdatePostSubscription = {
     } | null,
     comments?:  {
       __typename: "ModelCommentConnection",
-      items?:  Array< {
+      items:  Array< {
         __typename: "Comment",
         id: string,
         postID: string,
         content: string,
         createdAt: string,
         updatedAt: string,
-      } | null > | null,
+      } >,
       nextToken?: string | null,
     } | null,
     createdAt: string,
@@ -840,14 +840,14 @@ export type OnDeletePostSubscription = {
     } | null,
     comments?:  {
       __typename: "ModelCommentConnection",
-      items?:  Array< {
+      items:  Array< {
         __typename: "Comment",
         id: string,
         postID: string,
         content: string,
         createdAt: string,
         updatedAt: string,
-      } | null > | null,
+      } >,
       nextToken?: string | null,
     } | null,
     createdAt: string,
